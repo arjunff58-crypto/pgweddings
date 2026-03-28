@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | PG Weddings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .page-header { padding: 150px 0 80px; background-color: var(--color-off-white); text-align: center; }
+        .contact-grid { grid-template-columns: 1fr 1fr; gap: 4rem; }
+        .contact-info { padding: 3rem; background: var(--color-white); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; }
+        .contact-info h3 { margin-bottom: 2rem; font-size: 1.5rem; }
+        .info-item { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+        .info-item i { font-size: 1.5rem; color: var(--color-gold); }
+        .info-item p { margin: 0; }
+        .info-item a { color: var(--color-black); font-weight: 500; word-break: break-all; }
+        
+        .contact-form { padding: 3rem; background: var(--color-off-white); border-radius: 8px; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 500; }
+        .form-control { width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: var(--font-body); font-size: 1rem; }
+        .form-control:focus { outline: none; border-color: var(--color-gold); }
+        textarea.form-control { height: 120px; resize: vertical; }
+        
+        @media(max-width: 768px) {
+            .page-header { padding: 110px 0 50px; }
+            .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .contact-info, .contact-form { padding: 2rem 1.5rem; }
+        }
+        @media(max-width: 480px) {
+            .page-header { padding: 90px 0 40px; }
+            .contact-info, .contact-form { padding: 1.5rem 1rem; }
+            .info-item i { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PG WEDDINGS</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="services.html">Services</a>
+                <a href="process.html">Experience</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://wa.me/919526193993" class="btn btn-outline nav-whatsapp">WhatsApp Us</a>
+                <button class="mobile-menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav-inner">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="process.html">Experience</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://wa.me/919526193993" class="btn btn-primary mt-4">WhatsApp Us</a>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="subheading">Let's Connect</span>
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="grid contact-grid">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <p>Call Us</p>
+                        <a href="tel:+919526193993">09526193993</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <p>WhatsApp</p>
+                        <a href="https://wa.me/919526193993">09526193993</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>Email</p>
+                        <a href="mailto:pgcreativestudiosrr@gmail.com">pgcreativestudiosrr@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <p>Instagram</p>
+                        <a href="https://instagram.com/pgweddings" target="_blank">@pgweddings</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p>Location</p>
+                        <p>Shoranur, Kerala, India (Also serving Dubai)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="enquiryForm">
+                    <h3 class="font-heading text-2xl mb-4 font-semibold">Enquiry Form</h3>
+                    
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone / WhatsApp *</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Wedding Date</label>
+                        <input type="date" id="date" name="date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" class="form-control" placeholder="e.g. Kerala, Dubai">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Type of Service</label>
+                        <select id="service" name="service" class="form-control">
+                            <option value="Wedding Photography & Videography">Wedding Photography & Videography</option>
+                            <option value="Wedding Photography Only">Wedding Photography Only</option>
+                            <option value="Pre-Wedding Shoot">Pre-Wedding Shoot</option>
+                            <option value="Destination Wedding">Destination Wedding</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Tell us more about your event..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-full" style="width: 100%;">Check Availability</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="tel:+919526193993" class="float-btn call-btn" aria-label="Call Now"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/919526193993" class="float-btn wa-btn" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light py-5 border-t">
+        <div class="container grid footer-grid">
+            <div class="footer-brand">
+                <h3 class="logo mb-3">PG WEDDINGS</h3>
+                <p class="text-sm opacity-80">Personalized wedding experiences. Capturing your love story across Kerala, India, and Dubai.</p>
+            </div>
+            <div class="footer-links">
+                <h4 class="mb-3">Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="footer-contact">
+                <h4 class="mb-3">Get In Touch</h4>
+                <p>Call / WhatsApp: <a href="tel:+919526193993">09526193993</a></p>
+                <p>Email: <a href="mailto:pgcreativestudiosrr@gmail.com">pgcreativestudiosrr@gmail.com</a></p>
+                <p class="mt-3"><a href="https://instagram.com/pgweddings" target="_blank">IG: @pgweddings</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center pt-4 mt-5 border-t">
+            <p class="text-sm opacity-60">&copy; <span id="year"></span> PG Creative Studio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | PG Weddings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .page-header { padding: 150px 0 80px; background-color: var(--color-off-white); text-align: center; }
+        .service-detail { display: flex; align-items: center; gap: 4rem; margin-bottom: 5rem; }
+        .service-detail:nth-child(even) { flex-direction: row-reverse; }
+        .service-img { flex: 1; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .service-text { flex: 1; }
+        @media(max-width: 768px) {
+            .page-header { padding: 110px 0 50px; }
+            .service-detail, .service-detail:nth-child(even) { flex-direction: column; gap: 2rem; }
+        }
+        @media(max-width: 480px) {
+            .page-header { padding: 90px 0 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PG WEDDINGS</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="process.html">Experience</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://wa.me/919526193993" class="btn btn-outline nav-whatsapp">WhatsApp Us</a>
+                <button class="mobile-menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav-inner">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="process.html">Experience</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://wa.me/919526193993" class="btn btn-primary mt-4">WhatsApp Us</a>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="subheading">What We Offer</span>
+            <h1>Our Services</h1>
+            <p class="mt-4 max-w-2xl mx-auto">Tailored photography and videography packages across Kerala, India, and Dubai.</p>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="service-detail">
+            <div class="service-img">
+                <img src="assets/images/img-22.jpg" alt="Wedding Photography">
+            </div>
+            <div class="service-text">
+                <h2>Wedding Photography</h2>
+                <p class="mt-4">Full-day coverage capturing every important moment. We blend candid, photojournalistic styles with timeless portraiture to create a spectacular gallery of your wedding day.</p>
+                <ul class="features-list mt-4 mb-4">
+                    <li>High-resolution edited images</li>
+                    <li>Candid & traditional coverage</li>
+                    <li>Premium albums & prints available</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="service-detail">
+            <div class="service-img">
+                <img src="assets/images/img-31.jpg" alt="Wedding Videography">
+            </div>
+            <div class="service-text">
+                <h2>Wedding Videography</h2>
+                <p class="mt-4">Cinematic films that tell the full story. Using top-tier equipment, our videographers craft emotional, cinematic highlight reels and full-length wedding documentaries.</p>
+                <ul class="features-list mt-4 mb-4">
+                    <li>Cinematic short films (3-5 mins)</li>
+                    <li>Full-length documentary edits</li>
+                    <li>Drone footage included</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="service-detail">
+            <div class="service-img">
+                <img src="assets/images/img-40.jpg" alt="Pre-Wedding Shoots">
+            </div>
+            <div class="service-text">
+                <h2>Pre-Wedding Shoots</h2>
+                <p class="mt-4">Creative photoshoots for couples before the wedding. It's the perfect time to get comfortable in front of the camera and capture your chemistry without the stress of the wedding day.</p>
+                <ul class="features-list mt-4 mb-4">
+                    <li>Multiple location options</li>
+                    <li>Wardrobe consultation</li>
+                    <li>Save-the-date video highlights</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Enquire Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="tel:+919526193993" class="float-btn call-btn" aria-label="Call Now"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/919526193993" class="float-btn wa-btn" aria-label="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light py-5 border-t">
+        <div class="container grid footer-grid">
+            <div class="footer-brand">
+                <h3 class="logo mb-3">PG WEDDINGS</h3>
+                <p class="text-sm opacity-80">Personalized wedding experiences. Capturing your love story across Kerala, India, and Dubai.</p>
+            </div>
+            <div class="footer-links">
+                <h4 class="mb-3">Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="footer-contact">
+                <h4 class="mb-3">Get In Touch</h4>
+                <p>Call / WhatsApp: <a href="tel:+919526193993">09526193993</a></p>
+                <p>Email: <a href="mailto:pgcreativestudiosrr@gmail.com">pgcreativestudiosrr@gmail.com</a></p>
+                <p class="mt-3"><a href="https://instagram.com/pgweddings" target="_blank">IG: @pgweddings</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center pt-4 mt-5 border-t">
+            <p class="text-sm opacity-60">&copy; <span id="year"></span> PG Creative Studio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
