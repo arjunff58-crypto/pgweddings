@@ -15,25 +15,43 @@
         }
         .masonry-grid {
             column-count: 3;
-            column-gap: 15px;
-            padding: 0 15px;
+            column-gap: 12px;
+            padding: 0 12px;
         }
         .masonry-grid .portfolio-item {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             display: inline-block;
             width: 100%;
             height: auto !important;
             break-inside: avoid;
+            border-radius: 6px;
+            overflow: hidden;
         }
         .masonry-grid .portfolio-item img {
             height: auto !important;
             display: block;
+            width: 100%;
+            border-radius: 6px;
+            transition: transform 0.4s ease;
         }
+        .masonry-grid .portfolio-item:hover img {
+            transform: scale(1.03);
+        }
+        /* Tablet */
         @media (max-width: 900px) {
-            .masonry-grid { column-count: 2; }
+            .masonry-grid { column-count: 2; column-gap: 10px; padding: 0 10px; }
+            .masonry-grid .portfolio-item { margin-bottom: 10px; }
         }
+        /* Mobile — keep 2 columns for a nice gallery feel */
         @media (max-width: 600px) {
-            .masonry-grid { column-count: 1; }
+            .page-header { padding: 100px 0 40px; }
+            .masonry-grid { column-count: 2; column-gap: 6px; padding: 0 6px; }
+            .masonry-grid .portfolio-item { margin-bottom: 6px; border-radius: 4px; }
+            .masonry-grid .portfolio-item img { border-radius: 4px; }
+        }
+        /* Very small phones */
+        @media (max-width: 360px) {
+            .masonry-grid { column-count: 1; column-gap: 0; padding: 0 8px; }
         }
     </style>
 </head>
